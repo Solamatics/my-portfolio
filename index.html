@@ -31,18 +31,19 @@
         <div class="close__nav__menu outer__shadow hover__in__shadow">&times;</div>
         <div class="nav__menu__inner">
             <ul>
-                <li><a href="#" class="inner__shadow active">home</a>
-                <li><a href="#" class="outer__shadow hover__in__shadow">about</a></li>
-                <li><a href="#" class="outer__shadow hover__in__shadow">services</a></li>
-                <li><a href="#" class="outer__shadow hover__in__shadow">portfolio</a></li>
-                <li><a href="#" class="outer__shadow hover__in__shadow">contact</a></li>
+                <li><a href="#home" class="link__item inner__shadow active">home</a>
+                <li><a href="#about" class="link__item outer__shadow hover__in__shadow">about</a></li>
+                <li><a href="#services" class="link__item outer__shadow hover__in__shadow">services</a></li>
+                <li><a href="#portfolio" class="link__item outer__shadow hover__in__shadow">portfolio</a></li>
+                <li><a href="#contact" class="link__item outer__shadow hover__in__shadow">contact</a></li>
             </ul>
         </div>
     </nav>
+    <div class="fade__out__effect"></div>
     <!--navigation menu ends-->
 
     <!--home section starts-->
-    <section class="home section">
+    <section class="home section ative" id="home">
         <!--effect wrap starts-->
         <div class="effect__wrap">
             <div class="effect effect__1"></div>
@@ -66,7 +67,7 @@
                     <p>Hello</p>
                     <h2>I'm Olusola Afikode</h2>
                     <h1>Frontend Developer</h1>
-                    <a href="#" class="btn__me outer__shadow hover__in__shadow">About Me</a>
+                    <a href="#about" class="link__item btn__me outer__shadow hover__in__shadow">About Me</a>
                 </div>
                 <div class="home__img">
                     <div class="img__box inner__shadow">
@@ -83,7 +84,7 @@
     <!--home section ends-->
 
     <!--about section starts-->
-    <section class="about__section section">
+    <section class="about__section section" id="about">
         <div class="container">
             <div class="row">
                 <div class="section__title">
@@ -113,7 +114,7 @@
                     building and deploying interfaces that are user friendly and pleasant for the most number 
                     of people as possible.</p>
                     <a href="olusola_devCV.pdf" class="btn__me outer__shadow hover__in__shadow">Download CV</a>
-                    <a href="#" class="btn__me outer__shadow hover__in__shadow">Hire Me</a>
+                    <a href="#" class="link__item btn__me outer__shadow hover__in__shadow">Hire Me</a>
                 </div>
             </div>
             <!--eperience starts-->
@@ -164,6 +165,182 @@
         </div>
     </section>
     <!--about section ends-->
+
+    <!--service section starts-->
+    <section class="service__section section" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="section__title">
+                    <h2 data-heading="Services">What I do</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!--service items starts-->
+                <div class="service__item">
+                    <div class="service__item__inner outer__shadow">
+                        <div class="icon inner__shadow">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Making interfaces that fit into all screen viewports. Hence,
+                        giving users a good experience.</p>
+                    </div>
+                </div>
+                <div class="service__item">
+                    <div class="service__item__inner outer__shadow">
+                        <div class="icon inner__shadow">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                        <p>I use technologies like HTML, CSS, JavaScript and React to code designs into frontend applications</p>
+                    </div>
+                </div>
+                <div class="service__item">
+                    <div class="service__item__inner outer__shadow">
+                        <div class="icon inner__shadow">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Clean Code</h3>
+                        <p>I enjoy writing clean and reusable codes to help both me and subsequent developers
+                            have a good understanding of a project.</p>
+                    </div>
+                </div>
+                <!--service items ends-->
+            </div>
+        </div>
+    </section>
+    <!--service section ends-->
+
+    <!--portfolio section starts-->
+    <section class="portfolio__section section" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="section__title">
+                    <h2 data-heading="portfolio">Latest Projects</h2>
+                </div>
+            </div>
+            <!--portfolio filter starts-->
+            <div class="row">
+                <div class="portfolio__filter">
+                    <span class="filter__item outer__shadow active" data-target="all">all</span>
+                    <span class="filter__item" data-target="web-application">web application</span>
+                    <span class="filter__item" data-target="e-commerce">e-commerce</span>
+                </div>
+            </div>
+            <!--portfolio filter ends-->
+            <!--portfolio items starts-->
+            <div class="row portfolio__items" >
+                <!--portfolio item starts-->
+                <div class="portfolio__item" data-category="e-commerce">
+                    <div class="portfolio__item__inner outer__shadow">
+                        <div class="portfolio__item__img">
+                            <img src="./assets/delight-food.jpg" alt="portfolio" data-screenhots="./assets/delight-food-shot.png">
+                            <p class="portfolio__item__title">Delight Food</p>
+                            <!--view project button-->
+                            <a href="https://delight-groceries.netlify.app" class="view__project">view project</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!--portfolio item starts-->
+                <!--portfolio item starts-->
+                <div class="portfolio__item" data-category="e-commerce">
+                    <div class="portfolio__item__inner outer__shadow">
+                        <div class="portfolio__item__img">
+                            <img src="./assets/coffee.jpg" alt="portfolio" data-screenhots="./assets/delight-food-shot.png">
+                            <p class="portfolio__item__title">Coffee Cafe</p>
+                            <!--view project button-->
+                            <a href="https://coffee-sip.netlify.app" class="view__project">view project</a>
+                        </div>
+                    </div>
+                </div>
+                <!--portfolio item starts-->
+                <!--portfolio item starts-->
+                <div class="portfolio__item" data-category="web-application">
+                    <div class="portfolio__item__inner outer__shadow">
+                        <div class="portfolio__item__img">
+                            <img src="./assets/netflix.jpg" alt="portfolio" data-screenhots="./assets/coffee__shot.png">
+                            <p class="portfolio__item__title">Netflix Clone</p>
+                            <a href="https://coffee-sip.netlify.app" class="view__project">view project</a>
+                        </div>
+                    </div>
+                </div>
+                <!--portfolio item starts-->
+            </div>
+            <!--portfolio items ends-->
+        </div>
+    </section>
+    <!--portfolio section ends-->
+
+    <!--contact section start-->
+    <section class="contact__section section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="section__title">
+                    <h2 data-heading="contact">Get In Touch</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!--contact item start-->
+                <div class="contact__item">
+                    <div class="contact__item__inner outer__shadow">
+                        <i class="fas fa-phone"></i>
+                        <span>Phone</span>
+                        <p>+23480 2254 0176</p>
+                    </div>
+                </div>
+                <!--contact item ends-->
+                <!--contact item start-->
+                <div class="contact__item">
+                    <div class="contact__item__inner outer__shadow">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                        <p>afikodeolaitan@gmail.com</p>
+                    </div>
+                </div>
+                <!--contact item ends-->
+                <!--contact item start-->
+                <div class="contact__item">
+                    <div class="contact__item__inner outer__shadow">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Address</span>
+                        <p>6, Chris Oparaeke Street, Kubwa, Abuja,Nigeria</p>
+                    </div>
+                </div>
+                <!--contact item ends-->
+            </div>
+            <div class="row">
+                <div class="contact__form">
+                    <form>
+                        <div class="row">
+                            <div class="w-50">
+                                <div class="input__group outer__shadow hover__in__shadow">
+                                    <input type="text" placeholder="Name" class="input__control">
+                                </div>
+                                <div class="input__group outer__shadow hover__in__shadow">
+                                    <input type="text" placeholder="Email" class="input__control">
+                                </div>
+                                <div class="input__group outer__shadow hover__in__shadow">
+                                    <input type="text" placeholder="Subject" class="input__control">
+                                </div>
+                            </div>
+                            <div class="w-50">
+                                <div class="input__group outer__shadow hover__in__shadow">
+                                    <textarea class="input__control" placeholder="Message" id=""></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="submit__btn">
+                                <button type="submit" class="btn__me outer__shadow hover__in__shadow">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact section ends-->
 
     <!--javascript-->
     <script src="app.js"></script>
