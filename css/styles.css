@@ -866,6 +866,11 @@ portfolio Section
     color: var(--skin-color);
 }
 
+.view__project {
+    color: rgb(18, 67, 109);
+    font-weight: 700;
+}
+
 .portfolio__item .view__project:hover {
     color: var(--skin-color);
 }
