@@ -1,0 +1,102 @@
+@media (max-width: 991px) {
+    .portfolio__section .portfolio__item,
+    .service__section .service__item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact__section .w-50,
+    .contact__section .contact__item,
+    .portfolio__section .portfolio__item,
+    .service__section .service__item,
+    .home .home__text,
+    .home .home__img,
+    .about__section .about__img,
+    .about__section .about__info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .home .home__text {
+        order: 2;
+        text-align: center;
+    }
+    
+    .contact__section .submit__btn{
+        text-align: center;
+    }
+
+    .home .full__screen {
+        padding: 100px 0;
+    }
+
+    .home .home__img .img__box {
+        margin-bottom: 40px;
+        max-width: 350px;
+    }
+
+    .about__section .about__img {
+        padding-bottom: 30px;
+    }
+
+    .about__section .timeline .timeline__item {
+        margin-bottom: 40px;
+    }
+
+    .about__section .timeline .timeline__item:last-child {
+        margin-bottom: 0;
+    }
+
+    .about__section .timeline .timeline__item:nth-child(odd) .timeline__item__inner:before {
+        left: -30px;
+        right: auto;
+    }
+
+    .about__section .timeline .timeline__item:nth-child(odd) {
+        padding-right: 15px;
+        text-align: left;
+        padding-left: 75px;
+    }
+
+    .about__section .timeline .timeline__item:nth-child(even) {
+        padding-left: 75px;
+    }
+
+    .about__section .timeline .timeline__item:nth-child(even) .icon {
+        left: -60px;
+    }
+
+    .about__section .timeline:before {
+        left: 35px;
+    }
+
+    .about__section .timeline .timeline__item:nth-child(odd) .icon {
+        left: -60px;
+        right: auto;
+    }
+
+    .effect__3 {
+        margin-left: -60px;
+    }
+
+    .effect__4 {
+        left: 15%;
+    }
+
+    .effect__5 {
+        right: 4%;
+    }
+}
+
+@media (max-width: 574px) {
+    .home .home__img .img__box {
+        max-width: 260px;
+    }
+
+    .home .home__text h2{
+        font-size: 40px;
+    }
+
+}

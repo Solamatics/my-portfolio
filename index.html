@@ -7,10 +7,33 @@
     <title>Developer Portfolio</title>
     <!--custom style-->
     <link rel="stylesheet" href="./css/styles.css">
+    <!--responsive css-->
+    <link rel="stylesheet" href="./css/responsive.css">
+    <!--default color-->
+    <link rel="stylesheet" href="./css/skins/color-1.css">
+    <!--css for color switches-->
+    <link rel="stylesheet" class="alternate-style" title="color-1" type="text/css" href="css/skins/color-1.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-2" type="text/css" href="css/skins/color-2.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-3" type="text/css" href="css/skins/color-3.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-4" type="text/css" href="css/skins/color-4.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-5" type="text/css" href="css/skins/color-5.css" disabled>
+    <!--switcher styles-->
+    <link rel="stylesheet" href="./css/style-switches.css">
     <!--fonteawesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+
+    <!--preloader start-->
+    <div class="preloader">
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!--preloader end-->
+
     <!--header starts-->
     <header class="header">
         <div class="container">
@@ -43,7 +66,7 @@
     <!--navigation menu ends-->
 
     <!--home section starts-->
-    <section class="home section ative" id="home">
+    <section class="home section active" id="home">
         <!--effect wrap starts-->
         <div class="effect__wrap">
             <div class="effect effect__1"></div>
@@ -114,7 +137,7 @@
                     building and deploying interfaces that are user friendly and pleasant for the most number 
                     of people as possible.</p>
                     <a href="olusola_devCV.pdf" class="btn__me outer__shadow hover__in__shadow">Download CV</a>
-                    <a href="#" class="link__item btn__me outer__shadow hover__in__shadow">Hire Me</a>
+                    <a href="#contact" class="link__item btn__me outer__shadow hover__in__shadow">Hire Me</a>
                 </div>
             </div>
             <!--eperience starts-->
@@ -342,7 +365,28 @@
     </section>
     <!--contact section ends-->
 
+    <!--style switcher start for demo purposes only-->
+    <div class="style__switcher outer__shadow">
+        <div class="style__switcher__toggler s-icon outer__shadow hover__in__shadow">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day__night s-icon outer__shadow hover__in__shadow">
+            <i class="fas"></i>
+        </div>
+
+        <h4>Theme Colours</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!--style switcher end-->
+
     <!--javascript-->
     <script src="app.js"></script>
+    <script src="style-switcher.js"></script>
 </body>
 </html>
